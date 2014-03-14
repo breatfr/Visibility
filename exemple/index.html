@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>breat.me &bull; Visibility</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Display a div and hide others">
+    <script>
+        function visibility(id)	{
+        var divs = document.getElementsByTagName('div');
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='divs'){ // on cible les divs dont la class est 'divs'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            }
+            document.getElementById(id).style.display = "block"; // on affiche le div appelé
+        }
+    </script>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#">test</a>
+            <ul>
+                <li>
+                    <a href="javascript:visibility('test1');">test1</a>
+                </li>
+                <li>
+                    <a href="javascript:visibility('test2');">test2</a>
+                </li>
+                <li>
+                    <a href="javascript:visibility('test3');">test3</a>
+                </li>
+                <li>
+                    <a href="javascript:visibility('test4');">test4</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <div id="test1" class="divs" style="display:none">
+        test1 ok
+    </div>
+    <div id="test2" class="divs" style="display:none">
+        test2 ok
+    </div>
+    <div id="test3" class="divs" style="display:none">
+        test3 ok
+    </div>
+    <div id="test4" class="divs" style="display:none">
+        test4 ok
+    </div>
+</body>
+
+</html>
