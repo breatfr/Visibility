@@ -1,7 +1,7 @@
 # Visibility [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/breatfr)
 
 ## Description
-Display a div and hide other
+Display a div and hide other.
 
 ## How to use
 
